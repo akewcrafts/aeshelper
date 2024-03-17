@@ -40,7 +40,7 @@ To use the script, follow these steps:
 4. Run the script with the following command:
 
     ```bash
-    python aes_script.py -m [encrypt/decrypt] -k [base64-encoded-key] -d [data-to-encrypt/decrypt]
+    python aes-128-bit.py -m [encrypt/decrypt] -k [base64-encoded-key] -d [data-to-encrypt/decrypt]
     ```
     - *Replace [encrypt/decrypt] with either encrypt or decrypt based on your operation.*
     - *Replace [base64-encoded-key] with your base64-encoded encryption key.*

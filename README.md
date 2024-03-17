@@ -1,31 +1,73 @@
-# aeshelper
+# AES128 ECB/PKCS7Padding Encryption and Decryption 
 
-Python3 tools for decrypting and encrypting requests using AES-128bit AES/ECB/PKCS7Padding.
+![AES Logo](https://blog.cactusjack.top/upload/2021/10/1_RshQA9waAi-S7vdZkOKN6A-762c9a8f2ef6499b9457bfdf62a62b7e.jpeg)
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+This Python script provides functionality for AES-128bit (AES/ECB/PKCS7Padding) encryption and decryption using the `Crypto.Cipher` module.
+
+## Requirements
+
+- Python 3.x
+- `Crypto.Cipher` module (provided by `pycryptodome`)
+- `Crypto.Util.Padding` module (provided by `pycryptodome`)
+- `base64` module (standard library)
+
+## Installation
+
+1. Make sure you have Python 3.x installed on your system. If not, download and install it from the [official Python website](https://www.python.org/downloads/).
+
+2. Install the required libraries using pip:
+
+   ```bash
+   pip install pycryptodome
 
 ## Usage
 
-### Encryption
-To encrypt plaintext data using AES-128bit encryption, use the following command:
+To use the script, follow these steps:
 
-```python aes_tool.py -m decrypt -k "your_base64_encoded_key" -d "your_data_to_decrypt"```
+1. Clone the repository to your local machine:
 
+    ```bash
+    git clone https://github.com/yourusername/aes-encryption-decryption.git
 
-Replace `"plaintext"` with the text you want to encrypt.
+3. Navigate to the project directory:
 
-### Decryption
-To decrypt ciphertext data using AES-128bit encryption, use the following command:
+    ```bash
 
-```python aes_tool.py -m decrypt -k "your_base64_encoded_key" -d "your_data_to_decrypt"```
+    cd aes-encryption-decryption
 
+4. Run the script with the following command:
 
-Replace `"ciphertext"` with the text you want to decrypt.
+    ```bash
+    python aes_script.py -m [encrypt/decrypt] -k [base64-encoded-key] -d [data-to-encrypt/decrypt]
+    ```
+    - *Replace [encrypt/decrypt] with either encrypt or decrypt based on your operation.*
+    - *Replace [base64-encoded-key] with your base64-encoded encryption key.*
+    - *Replace [data-to-encrypt/decrypt] with the data you want to encrypt or decrypt.*
+    - *Use python3 command if you have multiple python version on your PATH*
+      
+# Script Explanation
 
-## Requirements
-- Python 3.x
-- pycryptodome library (install using `pip install pycryptodome`)
+The script provides two main functions:
+  
+`encrypt(plaintext, key)`: Encrypts the given plaintext using AES encryption and a base64-encoded key.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+`decrypt(ciphertext, key)`: Decrypts the given ciphertext using AES decryption and a base64-encoded key.
 
-## Acknowledgments
-- This tool uses the pycryptodome library for AES encryption and decryption.
+# Examples
+
+**Encrypting data:**
+
+  ```bash
+  python aes_script.py -m encrypt -k YWRtaW4= -d "Hello, World!"
+  ```
+**Decrypting data:**
+
+```bash
+python aes_script.py -m decrypt -k YWRtaW4= -d "U2FsdGVkX19ImoBfAXJdD8uvU3q5rMfiGgoyKzktH/E="
+```
+
+# License
+
+This project is licensed under the MIT License.

@@ -60,12 +60,12 @@ The script provides two main functions:
 **Encrypting data:**
 
   ```bash
-  python aes_script.py -m encrypt -k YWRtaW4= -d "Hello, World!"
+  python aes-128-bit.py -m encrypt -k YWRtaW4= -d "Hello, World!"
   ```
 **Decrypting data:**
 
 ```bash
-python aes_script.py -m decrypt -k YWRtaW4= -d "U2FsdGVkX19ImoBfAXJdD8uvU3q5rMfiGgoyKzktH/E="
+python aes-128-bit.py -m decrypt -k YWRtaW4= -d "U2FsdGVkX19ImoBfAXJdD8uvU3q5rMfiGgoyKzktH/E="
 ```
 
 # License

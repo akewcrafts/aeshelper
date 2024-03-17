@@ -7,14 +7,16 @@ Python3 tools for decrypting and encrypting requests using AES-128bit AES/ECB/PK
 ### Encryption
 To encrypt plaintext data using AES-128bit encryption, use the following command:
 
-python3 aes128bit.py -e "plaintext"
+```python aes_tool.py -m decrypt -k "your_base64_encoded_key" -d "your_data_to_decrypt"```
+
 
 Replace `"plaintext"` with the text you want to encrypt.
 
 ### Decryption
 To decrypt ciphertext data using AES-128bit encryption, use the following command:
 
-python3 aes128bit.py -d "ciphertext"
+```python aes_tool.py -m decrypt -k "your_base64_encoded_key" -d "your_data_to_decrypt"```
+
 
 Replace `"ciphertext"` with the text you want to decrypt.
 

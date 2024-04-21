@@ -29,7 +29,7 @@ To use the script, follow these steps:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/aes-encryption-decryption.git
+    git clone https://github.com/akewcrafts/aeshelper.git
 
 3. Navigate to the project directory:
 
